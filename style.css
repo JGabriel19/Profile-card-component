@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 38vh, left 50vw top 50vh;
+}
+.background__profile{
+    border-radius: 15px 15px 0 0 ;
+    width: 100%;
+}
+.profile__img{
+    border: 5px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-top: -52px;
+    margin-bottom: 1.25rem;
+}
+.container{
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%) ;
+    border-radius: 15px;
+}
+.header__card{
+    text-align: center;
+}
+.title{
+    margin-bottom: .625rem;
+}
+.subtitle{
+    margin-bottom: 1.875rem;
+}
+hr{
+    border: 1px solid hsl(0, 0%, 59%, .2);
+}
+span, p, .subtitle{
+    color: hsl(0, 0%, 59%) ;
+}
+h2{
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+.box{
+    padding: 1.875rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box * p{
+    margin-top: .2rem;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+@media screen and (max-width:375px) {
+    .container{
+        width: 85%;
+    }
+}
